@@ -20,9 +20,9 @@ def lcm_naive(a, b):
 def lcm_standard(a,b):
     gcd = gcd_standard(a,b)
     
-    return int(a*b/gcd)
+    return int(a*b/int(gcd))
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     input = sys.stdin.read()
     a, b = map(int, input.split())
     print(lcm_standard(a, b))
